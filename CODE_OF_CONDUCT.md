@@ -2,7 +2,7 @@
 This project is created and maintained by people of different backgrounds orginating from the UBC Masters of Data Science program. As such, this project will adhere to the [MDS code of conduct](https://ubc-mds.github.io/resources_pages/code_of_conduct/). Similarly, anyone contributing towards this project are expected to be courteous, understanding and welcoming of diversity.
 
 # Expected Behavior
-In accordance with the Inclusion Statement, all interactiongs regarding this project are expected to:
+In accordance with the Inclusion Statement, all interactions regarding this project are expected to:
 - be inclusive in speech, actions, and written word
 - be respectful of differences
 - be courteous towards others
@@ -25,4 +25,4 @@ you can contact one of the contributors of this project where the issue will be 
 - [Tao Huang](https://github.com/taohuang-ubc)
 
 
-Alternatively, reports can be made to [Firas](firas.moosvi@ubc.ca), or [Tiffany Timbers](tiffany.timbers@stat.ubc.ca). 
+Alternatively, reports can be made to [Firas Moosvi](firas.moosvi@ubc.ca), or [Tiffany Timbers](tiffany.timbers@stat.ubc.ca). 
