@@ -1,5 +1,12 @@
-# DSCI_532_GROUP_111_FLIGHT_EXPLORER
-viz-2 python dashboard
+In a few sentences, provide some motivation for why you are creating a dashboard. What problem is could it solve? What is the "purpose" of the dashboard? Be brief and clear.
 
-### CONTRIBUTION
-We welcome all contributions to this project! If you notice a bug, or have a feature request, please open up an issue [here](https://github.com/UBC-MDS/DSCI_532_GROUP_111_FLIGHT_EXPLORER/issues). If you'd like to contribute a feature or bug fix, you can fork our repo and submit a pull request. We will review pull requests within 7 days. All contributors must abide by our code of conduct.
+# FLIGHT EXPLORER
+
+Flight safety is often an important issue. Airlines are adversely affected by plane malfunctions, and consumers often will pick an airline based on its record of safety. 
+
+
+- airlines might be impacted financially
+- consumers pick flights based on safety
+- a particularly bad incident "sticks" to a certain airline
+- we want to know what airlines are good with incidents, and which ones aren't.
+- also look at improvements.
