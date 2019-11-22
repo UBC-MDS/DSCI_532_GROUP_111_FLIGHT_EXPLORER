@@ -1,5 +1,5 @@
 # Statement of Inclusion
-This project is created and maintained by people of different backgrounds orginating from the UBC Masters of Data Science program. As such, this project will adhere to the [MDS code of conduct](https://ubc-mds.github.io/resources_pages/code_of_conduct/). Similarly, anyone contributing towards this project are expected to be courteous, understanding and welcoming of diversity.
+This project is created and maintained by people of different backgrounds orginating from the UBC Masters of Data Science program. As such, this project will adhere to the [MDS code of conduct](https://ubc-mds.github.io/resources_pages/code_of_conduct/) and the [UBC Student Code of Conduct](https://students.ubc.ca/campus-life/student-code-conduct). Similarly, anyone contributing towards this project are expected to be courteous, understanding and welcoming of diversity.
 
 # Expected Behavior
 In accordance with the Inclusion Statement, all interactions regarding this project are expected to:
