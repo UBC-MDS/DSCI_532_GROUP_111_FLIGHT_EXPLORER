@@ -10,3 +10,12 @@ Flight safety is often an important issue. Airlines are adversely affected by pl
 - a particularly bad incident "sticks" to a certain airline
 - we want to know what airlines are good with incidents, and which ones aren't.
 - also look at improvements.
+
+# App Sketch Image
+
+![](1.png)
+
+![](2.png)
+
+
+
