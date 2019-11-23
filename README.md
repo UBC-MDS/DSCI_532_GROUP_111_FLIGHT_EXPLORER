@@ -1,21 +1,8 @@
-In a few sentences, provide some motivation for why you are creating a dashboard. What problem is could it solve? What is the "purpose" of the dashboard? Be brief and clear.
-
 # FLIGHT EXPLORER
 
-Flight safety is often an important issue. Airlines are adversely affected by plane malfunctions, and consumers often will pick an airline based on its record of safety. 
+Flight safety is often an important issue. Airlines are financially affected by plane malfunctions, since travellers often will pick an airline based on its record of safety, and a particularly bad incident will leave a bad reputation, regardless of improvements. In addition, various agencies would like to collect data about air safety, in order to discover any trends or patterns involved with air accidents.
 
+Flight Explorer is a dashboard that visualizes airline flight data with regards to flight incidents at different airlines, and displays them by airlines, incident numbers, as well as other factors such as first-world status of originating airlines, and lethality of air incidents.
 
-- airlines might be impacted financially
-- consumers pick flights based on safety
-- a particularly bad incident "sticks" to a certain airline
-- we want to know what airlines are good with incidents, and which ones aren't.
-- also look at improvements.
-
-# App Sketch Image
-
-![](1.png)
-
-![](2.png)
-
-
+{insert application sketch here}
 
