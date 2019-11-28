@@ -1,6 +1,4 @@
 import altair as alt
-import sys
-sys.path.append('/Users/lisebraaten/Desktop/UBC_MDS/Viz2(DSCI_532)/DSCI_532_GROUP_111_FLIGHT_EXPLORER')
 from Application.model import data_wrangle
 
 plot2 = alt.Chart(data_wrangle.chart_2_data, title = "Number of fatalities for airlines that had an incident between 1985 and 2014").mark_bar().encode(

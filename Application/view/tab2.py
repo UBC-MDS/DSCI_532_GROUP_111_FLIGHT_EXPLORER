@@ -1,5 +1,9 @@
 import dash_core_components as dcc
 import dash_html_components as html
+import view.chart1 as chart1
+import sys
+sys.path.append("..")
+
 
 tab2_result = html.Div([
             #Insert code for tab2 plot here
@@ -24,7 +28,7 @@ tab2_result = html.Div([
                 width='1500',
                 style={'border-width': '0'},
                 
-                # srcDoc =  # Lise's first function call goes here, please to add .to_html() in the end
+                srcDoc = chart1.plot1.to_html()
                 
                 ),
 

@@ -1,5 +1,9 @@
 import dash_html_components as html
 import dash_core_components as dcc
+import sys
+sys.path.append("..")
+
+import view.chart2 as chart2
 
 tab1_result = html.Div([
             dcc.RadioItems(
@@ -16,7 +20,7 @@ tab1_result = html.Div([
                     width='1500',
                     style={'border-width': '0'},
                     
-                    # srcDoc =  # Lise's first function call goes here, please to add .to_html() in the end
+                    srcDoc =  chart2.plot2.to_html()
         
                     ),
         ])
