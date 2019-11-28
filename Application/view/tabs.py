@@ -87,25 +87,15 @@ def make_plot():
 
 
 app.layout = html.Div([
-    dcc.Tabs(id='tabs', value='tab1', children=[
+    dcc.Tabs(id='tabs', value='tab-1', children=[
     dcc.Tab(label='Fatality rates per billion by airlines', value='tab-1'),
     dcc.Tab(label='Counts of different categories of incidents', value='tab-2'),
     ]),
     html.Div(id='tabs-content-example')
-    
-    ### ADD CONTENT HERE like: html.H1('text'),
 ]
 
 )
-    
-#     dcc.Tabs(id='tabs', value='tab1', children=[
-#     dcc.Tab(label='Fatality rates per billion by airlines', value='tab-1'),
-#     dcc.Tab(label='Counts of different categories of incidents', value='tab-2'),
-#     ]),
-#     html.Div(id='tabs-content-example')
-    
-#     ### ADD CONTENT HERE like: html.H1('text'),
-# ])
+
 
 @app.callback(Output('tabs-content-example', 'children'),
               [Input('tabs', 'value')])
@@ -116,17 +106,6 @@ def render_content(tab):
         return tab1.tab1_result
     elif tab == 'tab-2':
         return tab2.tab2_result
-
-        html.Iframe(
-                sandbox='allow-scripts',
-                id='plot1',
-                height='1000',
-                width='1500',
-                style={'border-width': '0'},
-                
-                # srcDoc =  # Lise's first function call goes here, please to add .to_html() in the end
-                
-                )
 
 ##### maybeuseful for James
 
