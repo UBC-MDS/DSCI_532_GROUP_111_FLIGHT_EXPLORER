@@ -7,12 +7,13 @@ import view.chart2 as chart2
 
 tab1_result = html.Div([
             dcc.RadioItems(
-        options=[
-        {'label': 'First world', 'value': '##### Lise, you can pick your value here'},
-        {'label': 'Non first world', 'value': '##### Lise, you can pick your value here'},
-        {'label': 'Both', 'value': '##### Lise, you can pick your value here'}
-        ],
-        value='##### Lise, this is the default value for radio button'),
+                id = "radio-items",
+                options=[
+                {'label': 'First world', 'value': '0'},
+                {'label': 'Non first world', 'value': '1'},
+                {'label': 'Both', 'value': '2'}
+                ],
+                value='0'),
             html.Iframe(
                     sandbox='allow-scripts',
                     id='plot',

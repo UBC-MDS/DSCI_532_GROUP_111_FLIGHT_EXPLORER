@@ -67,23 +67,14 @@ def make_plot():
             }
                 }
 
-# register the custom theme under a chosen name
-    alt.themes.register('mds_special', mds_special)
+    # register the custom theme under a chosen name
+        alt.themes.register('mds_special', mds_special)
 
-    # enable the newly registered theme
-    alt.themes.enable('mds_special')
-    #alt.themes.enable('none') # to return to default
-    
+        # enable the newly registered theme
+        alt.themes.enable('mds_special')
+        #alt.themes.enable('none') # to return to default
+        
 
-
-####### Lise, you can insert your function calls for your plots in the following 
-
-
-# def fun1():
-#     return p1
-
-# def fun2():
-#     return p2
 
 
 app.layout = html.Div([
@@ -105,7 +96,12 @@ def render_content(tab):
     if tab == 'tab-1':
         return tab1.tab1_result
     elif tab == 'tab-2':
-        return tab2.tab2_result
+        return tab2.return_tab2_result(tab)
+
+@app.callback(Output('plot', 'srcDoc'),
+              [Input('dd-chart1', 'value')])
+def new_tab2_graph(value):
+    return tab2.return_tab2_result(value)   
 
 ##### maybeuseful for James
 
