@@ -2,7 +2,8 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import altair as alt
-
+import tab1 as tab1
+import tab2 as tab2
 from dash.dependencies import Input, Output
 
 app = dash.Dash(__name__, assets_folder='assets')
@@ -72,9 +73,10 @@ def make_plot():
     # enable the newly registered theme
     alt.themes.enable('mds_special')
     #alt.themes.enable('none') # to return to default
+    
 
 
-####### Lise, you can insert your functions for your plots in the following 
+####### Lise, you can insert your function calls for your plots in the following 
 
 
 # def fun1():
@@ -92,7 +94,18 @@ app.layout = html.Div([
     html.Div(id='tabs-content-example')
     
     ### ADD CONTENT HERE like: html.H1('text'),
-])
+]
+
+)
+    
+#     dcc.Tabs(id='tabs', value='tab1', children=[
+#     dcc.Tab(label='Fatality rates per billion by airlines', value='tab-1'),
+#     dcc.Tab(label='Counts of different categories of incidents', value='tab-2'),
+#     ]),
+#     html.Div(id='tabs-content-example')
+    
+#     ### ADD CONTENT HERE like: html.H1('text'),
+# ])
 
 @app.callback(Output('tabs-content-example', 'children'),
               [Input('tabs', 'value')])
@@ -100,41 +113,9 @@ app.layout = html.Div([
 def render_content(tab):
 
     if tab == 'tab-1':
-        return html.Div([
-            dcc.RadioItems(
-        options=[
-        {'label': 'First world', 'value': '##### Lise, you can pick your value here'},
-        {'label': 'Non first world', 'value': '##### Lise, you can pick your value here'},
-        {'label': 'Both', 'value': '##### Lise, you can pick your value here'}
-        ],
-        value='##### Lise, this is the default value for radio button'),
-            html.Iframe(
-                    sandbox='allow-scripts',
-                    id='plot',
-                    height='1000',
-                    width='1500',
-                    style={'border-width': '0'},
-                    
-                    # srcDoc =  # Lise's first function call goes here, please to add .to_html() in the end
-        
-                    ),
-        ])
+        return tab1.tab1_result
     elif tab == 'tab-2':
-        return html.Div([
-            #Insert code for tab2 plot here
-            dcc.Dropdown(
-        id='dd-chart1',
-        options=[
-        {'label': 'Incidents', 'value': '##### Lise, you can pick your value here'},
-        {'label': 'Fatal incidents', 'value': '##### Lise, you can pick your value here'},
-        {'label': 'Fatalities', 'value': '##### Lise, you can pick your value here'},
-        {'label': 'Lethality', 'value': '##### Lise, you can pick your value here'},
-
-        ],
-        value='##### Lise, this is the default value for drop dowm',
-        style=dict(width='45%',
-                verticalAlign="middle")
-                ),
+        return tab2.tab2_result
 
         html.Iframe(
                 sandbox='allow-scripts',
@@ -145,9 +126,7 @@ def render_content(tab):
                 
                 # srcDoc =  # Lise's first function call goes here, please to add .to_html() in the end
                 
-                ),
-
-        ])
+                )
 
 ##### maybeuseful for James
 
