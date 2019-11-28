@@ -20,7 +20,7 @@ tab1_result = html.Div([
                     width='1500',
                     style={'border-width': '0'},
                     
-                    srcDoc =  chart2.plot2.to_html()
+                    srcDoc =  chart2.return_plot_2().to_html()
         
                     ),
         ])

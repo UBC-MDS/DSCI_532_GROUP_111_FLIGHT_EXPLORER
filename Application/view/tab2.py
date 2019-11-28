@@ -28,7 +28,7 @@ tab2_result = html.Div([
                 width='1500',
                 style={'border-width': '0'},
                 
-                srcDoc = chart1.plot1.to_html()
+                srcDoc = chart1.return_plot_1().to_html()
                 
                 ),
 
