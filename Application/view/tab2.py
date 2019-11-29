@@ -1,12 +1,9 @@
 import dash_core_components as dcc
 import dash_html_components as html
-import view.chart1 as chart1
-import sys
-sys.path.append("..")
+from view import chart1
 
-def return_tab2_result(value):
+def return_tab2_result():
         tab2_result = html.Div([
-                #Insert code for tab2 plot here
                 dcc.Dropdown(
                 id='dd-chart1',
                 options=[
@@ -27,9 +24,7 @@ def return_tab2_result(value):
                         height='1000',
                         width='1500',
                         style={'border-width': '0'},
-                        
-                        srcDoc = chart1.plot1.to_html()
-                        
+                        srcDoc = chart1.return_plot_1().to_html()
                         ),
 
                 ])

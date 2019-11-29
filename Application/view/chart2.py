@@ -1,5 +1,6 @@
 import altair as alt
-from Application.model import data_wrangle
+import sys
+from model import data_wrangle
 
 def return_plot_2(): 
     plot2 = alt.Chart(data_wrangle.chart_2_data, title = "Number of fatalities for airlines that had an incident between 1985 and 2014").mark_bar().encode(

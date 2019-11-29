@@ -2,8 +2,10 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import altair as alt
-import view.tab1 as tab1
-import view.tab2 as tab2
+# import sys
+# sys.path.append()
+from view import tab1, tab2
+# import view.tab2 as tab2
 from dash.dependencies import Input, Output
 
 app = dash.Dash(__name__, assets_folder='assets')
@@ -82,42 +84,25 @@ app.layout = html.Div([
     dcc.Tab(label='Fatality rates per billion by airlines', value='tab-1'),
     dcc.Tab(label='Counts of different categories of incidents', value='tab-2'),
     ]),
-    html.Div(id='tabs-content-example')
-]
-
-)
+    html.Div(id='tabs-content')
+])
 
 
-@app.callback(Output('tabs-content-example', 'children'),
+@app.callback(Output('tabs-content', 'children'),
               [Input('tabs', 'value')])
 
 def render_content(tab):
-
     if tab == 'tab-1':
-        return tab1.tab1_result
+        return tab1.return_tab1_result()
     elif tab == 'tab-2':
-        return tab2.return_tab2_result(tab)
+        return tab2.return_tab2_result()
 
-@app.callback(Output('plot', 'srcDoc'),
-              [Input('dd-chart1', 'value')])
-def new_tab2_graph(value):
-    return tab2.return_tab2_result(value)   
-
-##### maybeuseful for James
-
-# @app.callback(
+# @app.callback(Output('plot1', 'srcDoc'),
+#               [Input('dd-chart1', 'value')])
+# def new_tab2_graph(value):
+#     return tab2.return_tab2_result(value)  
 
 
-# dash.dependencies.Output('plot1', 'srcDoc'),
-# [dash.dependencies.Input('dd-chart1', 'value')])
-
-# def update_plot(job):
-#     '''
-#     Takes in an job_to_choose and calls make_plot to update our Altair figure
-#     '''
-#     updated_plot = trend(job_to_choose=job).to_html()
-#     return updated_plot
-#####
     
 if __name__ == '__main__':
     app.run_server(debug=True)
