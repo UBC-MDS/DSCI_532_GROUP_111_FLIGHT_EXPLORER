@@ -1,6 +1,6 @@
 import dash_core_components as dcc
 import dash_html_components as html
-from view import chart1
+from view import jitter_bar_fatality_chart
 
 def return_tab2_result():
         tab2_result = html.Div([
@@ -24,7 +24,7 @@ def return_tab2_result():
                         height='1000',
                         width='1500',
                         style={'border-width': '0'},
-                        srcDoc = chart1.return_plot_1().to_html()
+                        srcDoc = jitter_bar_fatality_chart.return_jitter_bar_fatality_chart().to_html()
                         ),
 
                 ])

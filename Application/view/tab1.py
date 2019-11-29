@@ -1,6 +1,6 @@
 import dash_html_components as html
 import dash_core_components as dcc
-from view import chart2
+from view import incident_horizontal_bar_chart
 
 def return_tab1_result(value = "0"):
     tab1_result = html.Div([
@@ -18,8 +18,6 @@ def return_tab1_result(value = "0"):
                         height='1000',
                         width='1500',
                         style={'border-width': '0'},
-                        
-                        srcDoc = chart2.return_plot_2().to_html(value)
-            
+                        srcDoc = incident_horizontal_bar_chart.return_fatality_bar_chart(value).to_html()
                         )])
     return tab1_result

@@ -2,7 +2,7 @@ import altair as alt
 import sys
 from model import data_wrangle
 
-def return_plot_1(value = '0'):
+def return_jitter_bar_fatality_chart(value = '0'):
     plot = alt.Chart(data_wrangle.chart_1_data).encode(
         alt.X("variable", title = "Time period"),
         alt.Y("value", title = "Count"))
