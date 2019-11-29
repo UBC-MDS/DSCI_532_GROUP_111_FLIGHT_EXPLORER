@@ -8,7 +8,6 @@ import dash_bootstrap_components as dbc
 # self-defined python modules begin here
 from view import fatality_rates_var_chart_tab, incident_jitter_boxplot_tab, \
     incident_horizontal_bar_chart, jitter_bar_fatality_chart
-
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, assets_folder='assets', external_stylesheets=[dbc.themes.CERULEAN])
 app.config['suppress_callback_exceptions'] = True
