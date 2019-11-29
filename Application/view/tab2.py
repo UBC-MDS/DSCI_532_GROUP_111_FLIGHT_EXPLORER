@@ -7,13 +7,13 @@ def return_tab2_result():
                 dcc.Dropdown(
                 id='dd_incident_selection',
                 options=[
-                {'label': 'Incidents', 'value': 'Incidents'},
-                {'label': 'Fatal incidents', 'value': 'Fatal incidents'},
-                {'label': 'Fatalities', 'value': 'Fatalities'},
-                {'label': 'Lethality', 'value': 'Lethality'},
+                {'label': 'Incidents', 'value': 'incident'},
+                {'label': 'Fatal incidents', 'value': 'fatal_accident'},
+                {'label': 'Fatalities', 'value': 'fatalities'},
+                {'label': 'Lethality', 'value': 'lethality'},
 
                 ],
-                value='Incidents',
+                value='incident',
                 style=dict(width='45%',
                         verticalAlign="middle")
                         ),

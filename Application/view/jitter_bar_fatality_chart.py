@@ -2,10 +2,10 @@ import altair as alt
 import sys
 from model import data_wrangle
 
-def return_jitter_bar_fatality_chart(value = ''):
+def return_jitter_bar_fatality_chart(value = "incident"):
     plot = alt.Chart(data_wrangle.chart_1_data).encode(
-        alt.X("variable", title = "Time period"),
-        alt.Y("value", title = "Count"))
+        alt.X(f"{value}_period:N", title = "Time period"),
+        alt.Y(f"{value}_value:Q", title = "Count"))
 
     plot1 = alt.layer(plot.mark_boxplot(size=200, opacity=.4) + plot.mark_point()
        ).configure_title(fontSize=18
