@@ -5,22 +5,22 @@ from view import jitter_bar_fatality_chart
 def return_tab2_result():
         tab2_result = html.Div([
                 dcc.Dropdown(
-                id='dd-chart1',
+                id='dd_incident_selection',
                 options=[
-                {'label': 'Incidents', 'value': '0'},
-                {'label': 'Fatal incidents', 'value': '1'},
-                {'label': 'Fatalities', 'value': '2'},
-                {'label': 'Lethality', 'value': '3'},
+                {'label': 'Incidents', 'value': 'Incidents'},
+                {'label': 'Fatal incidents', 'value': 'Fatal incidents'},
+                {'label': 'Fatalities', 'value': 'Fatalities'},
+                {'label': 'Lethality', 'value': 'Lethality'},
 
                 ],
-                value='0',
+                value='Incidents',
                 style=dict(width='45%',
                         verticalAlign="middle")
                         ),
 
                 html.Iframe(
                         sandbox='allow-scripts',
-                        id='plot1',
+                        id='jitter_bar_chart',
                         height='1000',
                         width='1500',
                         style={'border-width': '0'},

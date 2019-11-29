@@ -14,7 +14,7 @@ def return_tab1_result(value = "0"):
                     value='0'),
                 html.Iframe(
                         sandbox='allow-scripts',
-                        id='plot',
+                        id='horizontal_bar_chart_iframe',
                         height='1000',
                         width='1500',
                         style={'border-width': '0'},
