@@ -36,7 +36,8 @@ def return_jitter_bar_fatality_chart(value=None):
                       jitter_plot.mark_point()
                       ).configure_title(fontSize=18
                                         ).configure_legend(labelFontSize=13
-                                                           ).configure_axis(labelFontSize=12,
+                                                           ).configure_axis(labelAngle =0,
+                                                                            labelFontSize=16,
                                                                             titleFontSize=24
                                                                             ).properties(width=800,
                                                                                          height=600,
