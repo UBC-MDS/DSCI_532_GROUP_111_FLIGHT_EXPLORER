@@ -13,7 +13,6 @@ app = dash.Dash(__name__, assets_folder='assets', external_stylesheets=[dbc.them
 app.config['suppress_callback_exceptions'] = True
 server = app.server
 app.title = 'Flight Explorer'
-
 jumbotron = dbc.Jumbotron(
     [
         dbc.Container(
