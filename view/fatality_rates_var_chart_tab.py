@@ -25,8 +25,8 @@ def return_fatality_rates_bar_chart_result(value=None):
                 id="radio-items",
                 options=[
                     {'label': 'First world ', 'value': '0'},
-                    {'label': 'Non first world ', 'value': '1'},
-                    {'label': 'Both', 'value': '2'}
+                    # {'label': 'Non first world ', 'value': '1'},
+                    {'label': 'All', 'value': '2'}
                 ],
                 value='0',
                 style=dict(width='45%',
