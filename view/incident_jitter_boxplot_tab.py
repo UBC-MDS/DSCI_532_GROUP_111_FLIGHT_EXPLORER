@@ -21,22 +21,37 @@ def return_incident_jitter_boxplot_result(value=None):
 
     tab2_result = dbc.Container([
         dbc.Row([
-            dbc.Col(dcc.Dropdown(
+            # dbc.Col(dcc.Dropdown(
+            #     id='dd_incident_selection',
+            #     options=[
+            #         {'label': 'Incidents', 'value': 'incident'},
+            #         {'label': 'Fatal incidents', 'value': 'fatal_accident'},
+            #         {'label': 'Fatalities', 'value': 'fatalities'},
+            #         {'label': 'Lethality', 'value': 'lethality'},
+
+            #     ],    
+            #     value='incident',
+            #     searchable=False,
+            #     clearable=False,
+            #     style=dict(width='60%',
+            #                verticalAlign="middle")
+            # ),
+            #     width="4"),
+
+
+            dbc.Col(dcc.RadioItems(
                 id='dd_incident_selection',
                 options=[
                     {'label': 'Incidents', 'value': 'incident'},
                     {'label': 'Fatal incidents', 'value': 'fatal_accident'},
                     {'label': 'Fatalities', 'value': 'fatalities'},
                     {'label': 'Lethality', 'value': 'lethality'},
-
-                ],
+                ],    
                 value='incident',
-                searchable=False,
-                clearable=False,
-                style=dict(width='60%',
-                           verticalAlign="middle")
-            ),
-                width="4"),
+                style=dict(width='45%',
+                           verticalAlign="middle")),
+                width="2"),
+
             dbc.Col(html.Iframe(
                 sandbox='allow-scripts',
                 id='jitter_bar_chart',
