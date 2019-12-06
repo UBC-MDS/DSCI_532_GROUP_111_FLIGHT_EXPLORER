@@ -4,7 +4,6 @@ import dash_html_components as html
 
 from view import jitter_bar_fatality_chart
 
-
 def return_incident_jitter_boxplot_result(value=None):
     """
     Returns the html div to be rendered into the counts of different categories tab.
