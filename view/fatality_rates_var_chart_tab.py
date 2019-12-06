@@ -25,7 +25,7 @@ def return_fatality_rates_bar_chart_result(value=None):
                 id="radio-items",
                 options=[
                     {'label': 'First world ', 'value': '0'},
-                    # {'label': 'Non first world ', 'value': '1'},  # I still keep it here just in case
+                    # {'label': 'Non first world ', 'value': '1'},  # We decide to remove the 'Non-first world', I still keep it here just in case
                     {'label': 'All', 'value': '2'}
                 ],
                 value='0',
