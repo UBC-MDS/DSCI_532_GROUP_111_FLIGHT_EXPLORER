@@ -19,7 +19,7 @@ jumbotron = dbc.Jumbotron(
             [
                 html.Img(src='https://storage.needpix.com/rsynced_images/airplane-26560_1280.png',
                          width='100px'),
-                html.H1("Flight Explorerer", className="display-3"),
+                html.H1("Flight Explorer", className="display-3"),
                 html.P(
                     "an interactive dashboard for looking at flight incident data",
                     className="lead",
