@@ -43,7 +43,7 @@ def return_fatality_bar_chart(value=None):
         else:
             color_range = ["gray", "blue"]
         plot2 = alt.Chart(data_wrangle.chart_2_data,
-                          title="Number of fatalities for airlines that had an incident between 1985 and 2014"
+                          title="Rate of fatal incidents for airlines between 1985 and 2014"
                           ).mark_bar().encode(
             alt.Y("airline:N",
                   title="Airline (* includes regional subsidiaries)",
@@ -52,7 +52,7 @@ def return_fatality_bar_chart(value=None):
                       order="ascending")),
             alt.X("total_fatalities_per_b_avail_seat_km:Q",
                   axis=alt.Axis(
-                      title="Rate of fatalities per billion available seat kilometers")),
+                      title="Normalized Rate of fatal incidents (incident/billion km/seat)")),
 
             alt.Color("first_world",
                       title=None,

@@ -21,7 +21,7 @@ def return_incident_jitter_boxplot_result(value=None):
 
     tab2_result = dbc.Container([
         dbc.Row([
-            dbc.Col(dcc.Dropdown(
+            dbc.Col([dcc.Dropdown(
                 id='dd_incident_selection',
                 options=[
                     {'label': 'Incidents', 'value': 'incident'},
@@ -36,6 +36,13 @@ def return_incident_jitter_boxplot_result(value=None):
                 style=dict(width='60%',
                            verticalAlign="middle")
             ),
+            dbc.Jumbotron([dcc.Markdown("""This box plot with scatter shows One of four statistics, over the two periods of 1985-1999, and 2000- 2014"""), 
+                           dcc.Markdown("""**Incidents**: the number of Incidents, both fatal and non-fatal."""),
+                           dcc.Markdown("""**Fatal Incidents**: the number of Incidents, involving fatalities."""),
+                           dcc.Markdown("""**Fatalities**: the number of fatalities per airline during the two periods"""),
+                           dcc.Markdown("""**Lethality**: the proportion of incidents that are fatal incidents"""),
+                           dcc.Markdown("""Hover over each scatterplot point to see each airline and it's corresponding statistic.""")]),
+            ],
                 width="4"),
             dbc.Col(html.Iframe(
                 sandbox='allow-scripts',
