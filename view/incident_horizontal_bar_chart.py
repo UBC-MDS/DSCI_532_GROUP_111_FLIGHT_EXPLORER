@@ -40,7 +40,7 @@ def return_fatality_bar_chart(value=None):
     if value != "2":
         if value == "0":
             color_range = ["blue", "grey"]
-        else:
+        else:                               # To remove 'Non First World', we do not need to do anything here
             color_range = ["gray", "blue"]
         plot2 = alt.Chart(data_wrangle.chart_2_data,
                           title="Number of fatalities for airlines that had an incident between 1985 and 2014"
