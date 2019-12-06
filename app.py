@@ -29,8 +29,11 @@ jumbotron = dbc.Jumbotron(
     ],
     fluid=True,
 )
-footer = dbc.Container([dbc.Row(dbc.Col(html.P("""Made by James Liu, Lise Braaten, Tao Huang
-                                        of DSCI 532 group 111 as a collaborative project"""))),
+footer = dbc.Container([dbc.Row(dbc.Col([html.P("""Made by James Liu, Lise Braaten, Tao Huang
+                                        of DSCI 532 group 111 as a collaborative project"""),
+                                        dcc.Markdown("""data taken from [github](https://github.com/fivethirtyeight/data/tree/master/airline-safety), 
+                                        originally used for 
+                                        [this fiveThirtyEight article.](https://fivethirtyeight.com/features/should-travelers-avoid-flying-airlines-that-have-had-crashes-in-the-past/)""")])),
                         ])
 app.layout = html.Div([
     jumbotron,
